@@ -1,0 +1,45 @@
+/* Contenedor general del Home */
+.home-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Sección del filtro */
+.filtro-container {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.filtro-container h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Barra de rango */
+.range-input {
+  width: 100%;
+  accent-color: #38b6ff; /* Azul celeste del estilo */
+  margin: 10px 0;
+}
+
+.filtro-precios {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #444;
+}
+
+/* Grilla de productos: se conecta con productos.css */
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+}

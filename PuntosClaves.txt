@@ -1,0 +1,25 @@
+Tenemos: 
+-> Logo de navegador ✅
+-> Logo pagina ✅
+[---------------------]
+FRONT END:
+-> Inicio sesion ✅
+-> Registro de usuario ✅
+    -> Confimracion correo
+    -> Link con Facebok
+    -> Link con Google
+-> Home
+    -> Header✅
+        -> Sidebar✅
+    -> Buscador ✅
+    -> Carrito ✅
+    -> Filtros
+    -> Tarjetas ✅
+    -> Detalle de tarjetas ✅
+    -> Footer✅
+        -> Redes sociales✅
+-> 
+[---------------------]
+PRODUCTO VA EN:
+-> Home
+-> Pagar Carrito

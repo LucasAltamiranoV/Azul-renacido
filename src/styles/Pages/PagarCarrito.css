@@ -1,0 +1,127 @@
+.carrito-ventana {
+  position: fixed;
+  top: 70px;
+  right: 20px;
+  width: 250px; /* un poco más pequeño */
+  max-height: 75vh;
+  background: #fff;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  border-radius: 12px;
+  padding: 12px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.carrito-ventana h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.productos-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Tarjeta de cada producto */
+.producto-card-carrito {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px;
+  background-color: #f5f5f5;
+  border-radius: 6px;
+  gap: 10px;
+  transition: background 0.2s ease;
+}
+
+.producto-card-carrito:hover {
+  background-color: #e6f3ff;
+}
+
+/* Imagen pequeña del producto */
+.producto-thumbnail {
+  width: 200px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Info del producto: nombre y precio */
+.producto-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+  max-width: 150px; /* reduce el espacio que toma el texto */
+}
+
+.producto-nombre {
+  font-weight: 600;
+  font-size: 0.9rem; /* ligeramente más pequeño */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.producto-precio {
+  font-size: 0.85rem; /* más pequeño para balancear */
+  color: #38b6ff;
+}
+
+/* Botón de eliminar */
+.producto-eliminar {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: transform 0.2s ease;
+}
+
+.producto-eliminar:hover {
+  transform: scale(1.2);
+}
+
+/* Total del carrito */
+.total-carrito {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin: 12px 0;
+  border-top: 1px solid #ccc;
+  padding-top: 8px;
+}
+
+/* Botón de pagar */
+.boton-pagar {
+  width: 100%;
+  padding: 10px;
+  background-color: #38b6ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.boton-pagar:hover {
+  background-color: #2a90cc;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .carrito-ventana {
+    width: 90%;
+    right: 5%;
+  }
+}

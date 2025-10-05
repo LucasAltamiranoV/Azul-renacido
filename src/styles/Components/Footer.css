@@ -1,0 +1,45 @@
+/* Aplica a toda la página */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Contenedor principal de la app */
+.App {
+  flex: 1; /* Ocupa el espacio disponible */
+}
+
+/* Footer existente */
+.footer {
+  background-color: #38b6ff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-icons {
+  margin-bottom: 10px;
+}
+
+.footer-icons svg {
+  color: white;
+  margin: 0 15px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.footer-icons svg:hover {
+  transform: scale(1.2);
+}
+
+.footer p {
+  color: white;
+  font-size: 14px;
+  margin: 0;
+}

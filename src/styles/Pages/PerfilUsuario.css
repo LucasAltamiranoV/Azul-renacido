@@ -1,0 +1,77 @@
+.perfil-container {
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 35px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.perfil-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #333;
+}
+
+.perfil-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.perfil-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+}
+
+.perfil-form input,
+.perfil-form select {
+  margin-top: 8px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: "Source Code Pro", monospace;
+  background-color: #fafafa;
+}
+
+.perfil-form input:focus,
+.perfil-form select:focus {
+  outline: none;
+  border-color: #38b6ff;
+  box-shadow: 0px 0px 6px rgba(56,182,255,0.3);
+}
+
+.perfil-form input[readonly] {
+  background-color: #e9ecef;
+  color: #555;
+  cursor: not-allowed;
+}
+
+.perfil-btn {
+  padding: 12px;
+  background: #38b6ff;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.perfil-btn:hover {
+  background: #2a90cc;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .perfil-container {
+    margin: 20px;
+    padding: 20px;
+  }
+}

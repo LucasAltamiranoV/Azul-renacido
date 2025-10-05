@@ -1,0 +1,27 @@
+.carrito-container {
+  position: fixed;
+  bottom: 20px; /* separación desde el fondo */
+  right: 20px;  /* separación desde la derecha */
+  z-index: 200; /* encima de todo */
+}
+
+.carrito-button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; /* círculo */
+  border: none;
+  background-color: #38b6ff;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.carrito-button:hover {
+  background-color: #2fa1e6;
+  transform: scale(1.1);
+}
